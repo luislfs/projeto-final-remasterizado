@@ -8,24 +8,27 @@
 </head>
 <body>
     <div class="nyel">
-        <img src="img/despesas 1.(2)png" alt="">
+        <!-- <img src="img/despesas 1.(2)png" alt=""> -->
        <H1>CADASTRO</H1>
-        <form action="/tblTransacao"> 
-            <input type="text" placeholder="Nome do usuário">
-            <br>
-            <input type="email" placeholder="Cadastre seu Email">
-            <br>
-            <input type="password" placeholder="Criar Senha">
-            <br>
-            <input type="tel" placeholder="Telefone">
-            <br>
 
+        <form id="userForm" action="/tblUsuario" method="post"> 
+            <input type="text" placeholder="Nome do usuário" nome="nomUsuario" id="nomUsuario" required>
+            <br>
+            <input type="email" placeholder="Cadastre seu Email" nome="dscEmail" id="dscEmail" required>
+            <br>
+            <input type="password" placeholder="Criar Senha" nome="dscSenha" id="dscSenha" required>
+            <br>
+            <input type="tel" placeholder="Telefone" nome="numTelefone" id="numTelefone" required>
+            <br>
+            
+            <button type="submit">Cadastrar</button>
         </form>
 
-        <a href="index.html">Cadastrar</a>
         <br>
         
 
     </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
